@@ -1,0 +1,33 @@
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend specific
+backend/vendor/
+backend/.env
+backend/.env.*
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/public/storage
+backend/.phpunit.result.cache
+backend/Homestead.json
+backend/Homestead.yaml
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.vite/
+
+# Logs
+*.log
