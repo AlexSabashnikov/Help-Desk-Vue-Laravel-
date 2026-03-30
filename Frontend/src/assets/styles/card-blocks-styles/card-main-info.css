@@ -1,0 +1,139 @@
+/* Контейнер для содержимого */
+.ticket-create-block-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  min-height: 200px;
+}
+
+/* Горизонтальная строка */
+.horizontal-row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.horizontal-row .horizontal-item {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Общие стили для внутренних блоков */
+.info-block-create {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0;
+  min-height: 20px;
+}
+
+/* Полная ширина для блоков темы и описания */
+.info-block-create.full-width {
+  width: 100%;
+}
+
+/* Специальные стили для UILabel внутри горизонтальных строк */
+.horizontal-row .info-block-create :deep(.ui-label-wrapper) {
+  height: 100%;
+}
+
+.horizontal-row .info-block-create :deep(.ui-label-value) {
+  min-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для статусных бейджей */
+.status-badge {
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-new {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.status-onSite {
+  background-color: #ccffeb;
+  color: #1ec381;
+  border: 1px solid #1ec381;
+}
+
+.status-waitingPayment {
+  background-color: #ffd3ea;
+  color: #b91e6e;
+  border: 1px solid #b91e6e;
+}
+
+.status-inProgress {
+  background-color: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.status-assigned {
+  background-color: #d0f2ff;
+  color: #1caae2;
+  border: 1px solid #a8e1ff;
+}
+
+.status-stopped {
+  background-color: #f2d0ff;
+  color: #8d00c5;
+  border: 1px solid #e6b3ff;
+}
+
+.status-rejected {
+  background-color: #ffcbcb;
+  color: #bd0000;
+  border: 1px solid #ffadad;
+}
+
+/* Стили для бейджей приоритета */
+.priority-badge {
+  font-weight: 600;
+  text-align: center;
+}
+
+.priority-crit {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+}
+
+.priority-high {
+  background-color: #ffddcb;
+  color: #ea580c;
+  border: 1px solid #ea580c;
+}
+
+.priority-medium {
+  background-color: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fbbf24;
+}
+
+.priority-low {
+  background-color: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #86efac;
+}
+
+/* Стили для просроченных дедлайнов */
+.deadline-overdue {
+  color: #dc3545 !important;
+  background-color: #fff5f5 !important;
+  border-color: #dc3545 !important;
+}

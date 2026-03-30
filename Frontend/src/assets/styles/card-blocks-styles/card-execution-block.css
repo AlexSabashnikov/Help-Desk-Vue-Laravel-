@@ -1,0 +1,86 @@
+/* Контейнер для содержимого */
+.ticket-create-block-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 200px;
+}
+
+.column-grid{
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 10px;
+  align-items: start;
+}
+
+/* Общие стили для всех столбцов */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+/* Столбец 1: Организация, Контактное лицо, Способ подачи заявки (шире) */
+.column-1 {
+  grid-column: 1;
+}
+
+/* Столбец 2: Договор, Телефон, Email */
+.column-2 {
+  grid-column: 2;
+}
+
+/* Общие стили для внутренних блоков */
+.info-block-create {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0;
+  min-height: 50px;
+}
+
+/* Полная ширина для блока материалов */
+.info-block-create.full-width {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Стили для кнопки профиля */
+.ticket-profile-button {
+  background: none;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.ticket-profile-button:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Стили для UILabel с кнопкой */
+.info-block-create :deep(.ui-label-content) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-block-create :deep(.ui-label-value) {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 8px;
+}
